@@ -123,7 +123,7 @@ html{
     scroll-snap-type: x proximity;
 }
 
-.section-title-container{
+.section-title{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -133,22 +133,22 @@ html{
     margin: 0 auto;
     text-align: center;
 }
-.section-title-container__title{
+.section-title__title{
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--black);
 }
-.section-title-container__subtitle{
+.section-title__subtitle{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
 }
-.section-title-container__title--product-detail{
+.section-title__title--product-detail{
     color: var(--just-white);
 }
-.section-title-container__subtitle--product-detail{
+.section-title__subtitle--product-detail{
     color: #808080;
 }
 
@@ -225,13 +225,13 @@ html{
     background-color: var(--soft-blue);
 }
 
-.product-detail{
+.product-detail-section{
     position: relative;
     width: 100%;
     min-width: 320px;
     background-color: var(--warm-black);
 }
-.product-detail__batata-logo{
+.product-detail-section__batata-logo{
     position: absolute;
     width: 50px;
     aspect-ratio: 8/5;
@@ -242,7 +242,7 @@ html{
     left: calc(50% - 25px);
 }
 
-.card{
+.product-card{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -253,7 +253,7 @@ html{
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(126, 79, 79, 0.16);
 }
-.card__icon{
+.product-card__icon{
     display: inline-block;
     width: 30px;
     aspect-ratio: 1/1;
@@ -263,43 +263,42 @@ html{
     background-repeat: no-repeat;
     
 }
-.card__icon--clock{
+.product-card__icon--clock{
     background-image: url(./assets/icons/clock.svg);
 }
-.card__icon--eye{
+.product-card__icon--eye{
     background-image: url(./assets/icons/eye.svg);
 }
-.card__icon--dollar{
+.product-card__icon--dollar{
     background-image: url(./assets/icons/dollar-sign.svg);
 }
-.card__icon--check{
+.product-card__icon--check{
     background-image: url(./assets/icons/check-circle.svg);
 }
-.card__title{
+.product-card__title{
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--just-white);
 }
-.card__subtitle{
+.product-card__subtitle{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
 }
 
-
-.bitcoin-img-container{
+.bitcoin-img{
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url(./assets/img/bitcoinbaby2x.jpg);
+    background-image: url(../assets/img/bitcoinbaby.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.bitcoin-img-container h2{
+.bitcoin-img__call-to-action{
     padding-top: 10vh;
     font-size: 2.4rem;
     font-weight: bold;
