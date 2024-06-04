@@ -95,53 +95,53 @@ html{
     width: 100%;
     background-color: var(--off-white);
 }
-
-
-.main-exchange-container{
+.main-content__section{
     width: 100%;
-    height: auto;
     padding: 80px 0 30px;
-    text-align: center;
 }
-.background-img{
-    width: 200px;
+
+.exchange-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.exchange-section__concept-img{
+    width: 50%;
     aspect-ratio: 1/1;
     margin: 0 auto;
-    margin-bottom: 50px;
-    background-image: url('./assets/img/bitcoin.svg');
+    background-image: url('../assets/img/bitcoin.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.main-exchange-container--title{
+.exchange-section__title{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
-}
-.main-exchange-container--title h2{
-    margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--black);
 }
-.main-exchange-container--title p{
-    margin-bottom: 30px;
+.exchange-section__subtitle{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
 }
-
-.tables-container--slider{
+.exchange-section__slider{
     display: flex;
     gap: 10px;
-    height: 316px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
+
 .table{
     scroll-snap-align: center;
     width: 70%;
@@ -150,21 +150,19 @@ html{
     margin: 0 25px;
     font-family: "Inter", "sans-serif";
 }
-.table h2{
-    margin-bottom: 15px;
+.table__title{
+    margin: 0 15px 15px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
-    
-}
-.table-currency-title{
     color: var(--bitcoin-orange);
 }
-.table-fees-title{
+.table__title--fees{
     color: var(--secondary-blue);
 }
-.grid-table{
+.table__grid{
     display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -172,24 +170,18 @@ html{
     margin: 0 auto;
     padding-left: 10%;
     align-items: center;
-
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
     text-align: start;
-
     background-color: var(--just-white);
     color: var(--grey);
-
     border-radius: 15px;
 }
-.currency-grid{
-    grid-template-columns: 3fr 2fr 1fr;
-}
-.fees-grid{
+.table__grid--fees{
     grid-template-columns: 3fr 2fr;
 }
-.table__price{
+.table__value{
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
@@ -201,14 +193,12 @@ html{
     width: 15px;
     aspect-ratio: 1/1;
     margin: 0 auto;
+    background-image: url('../assets/icons/trending-down.svg');
 }
-.trending-down-icon{
-    background-image: url('./assets/icons/trending-down.svg');
+.table__icon--up{
+    background-image: url('../assets/icons/trending-up.svg');
 }
-.trending-up-icon{
-    background-image: url('./assets/icons/trending-up.svg');
-}
-.table--date{
+.table__update-date{
     width: 190px;
     height: 30px;
     margin:  0 auto;
@@ -221,10 +211,7 @@ html{
     font-size: 1.2rem;
     line-height: 1.5rem;
 }
-.table-currency--date{
-    background-color: var(--soft-orange);
-}
-.table-fees--date{
+.table__update-date--fees{
     background-color: var(--soft-blue);
 }
 
