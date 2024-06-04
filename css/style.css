@@ -97,7 +97,7 @@ html{
 }
 .main-content__section{
     width: 100%;
-    padding: 80px 0 30px;
+    padding: 40px 0;
 }
 
 .exchange-section{
@@ -114,32 +114,42 @@ html{
     background-position: center;
     background-repeat: no-repeat;
 }
-.exchange-section__title{
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--black);
-}
-.exchange-section__subtitle{
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    color: #757575;
-}
+
 .exchange-section__slider{
     display: flex;
     gap: 10px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+}
+
+.section-title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.section-title-container__title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.section-title-container__subtitle{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+.section-title-container__title--product-detail{
+    color: var(--just-white);
+}
+.section-title-container__subtitle--product-detail{
+    color: #808080;
 }
 
 .table{
@@ -215,51 +225,24 @@ html{
     background-color: var(--soft-blue);
 }
 
-
-.main-product-detail{
+.product-detail{
     position: relative;
     width: 100%;
     min-width: 320px;
-    height: auto;
-    padding: 20px 10px;
-
     background-color: var(--warm-black);
 }
-
-.producto-detail--batata-logo{
+.product-detail__batata-logo{
     position: absolute;
     width: 50px;
     aspect-ratio: 8/5;
-    background-image: url(./assets/icons/batata.svg);
+    background-image: url('../assets/icons/batata.svg');
     background-position: center;
     background-repeat: no-repeat;
-
     top: calc(0% - 15px);
     left: calc(50% - 25px);
 }
-.producto-detail--text{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
 
-    margin: 50px auto 0;
-    text-align: center;
-}
-.producto-detail--text h2{
-    margin-bottom: 20px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--just-white);
-}
-.producto-detail--text p{
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #808080;
-}
-.producto-detail--card{
+.card{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -268,9 +251,9 @@ html{
     padding: 15px;
     background-color: var(--black);
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 4px 8px rgba(126, 79, 79, 0.16);
 }
-.producto-detail--card .icon{
+.card__icon{
     display: inline-block;
     width: 30px;
     aspect-ratio: 1/1;
@@ -280,26 +263,26 @@ html{
     background-repeat: no-repeat;
     
 }
-.clock-icon{
+.card__icon--clock{
     background-image: url(./assets/icons/clock.svg);
 }
-.eye-icon{
+.card__icon--eye{
     background-image: url(./assets/icons/eye.svg);
 }
-.dollar-icon{
+.card__icon--dollar{
     background-image: url(./assets/icons/dollar-sign.svg);
 }
-.check-icon{
+.card__icon--check{
     background-image: url(./assets/icons/check-circle.svg);
 }
-.producto-detail--card h3{
+.card__title{
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--just-white);
 }
-.producto-detail--card p{
+.card__subtitle{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
