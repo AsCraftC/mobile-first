@@ -387,30 +387,28 @@ html{
     vertical-align: text-bottom;
 }
 
-footer{
+.footer{
     display: flex;
-    
     width: 100%;
     height: 150px;
     background-color: var(--bitcoin-orange);
 }
-
-footer section{
+.footer__section{
     display: flex;
     width: 50%;
     align-items: center;
     justify-content: center;
 }
-footer .left ul{
+.footer__list{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     list-style: none;
 }
-footer .left li{
+.footer__list-element{
     margin: 10px 0;
 }
-footer .left li a{
+.footer__link{
     text-decoration: none;
     color: var(--just-white);
 }
