@@ -1,5 +1,5 @@
 # Título del proyecto
-![Imagen del proyecto](https://github.com/AsCraftC/mobile-first/?raw=true)
+![Imagen del proyecto](https://github.com/AsCraftC/mobile-first/blob/main/readme/Header.png?raw=true)
 
 ## Descripción 📑
 
@@ -17,8 +17,8 @@ El fin de este proyecto y el curso del que fue sacado es la aplicación de buena
 ## Vista previa del proyecto
 Si quieres hechas un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/AsCraftC/mobile-first/?raw=true)
-![Captura del proyecto](https://github.com/AsCraftC/mobile-first/?raw=true)
+![Captura del proyecto](https://github.com/AsCraftC/mobile-first/blob/main/readme/slider-exchange.png?raw=true)
+![Captura del proyecto](https://github.com/AsCraftC/mobile-first/blob/main/readme/slider-plans.png?raw=true)
 
 
 ## Autor ✒️
