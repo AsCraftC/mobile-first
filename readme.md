@@ -1,4 +1,4 @@
-# Título del proyecto
+# Aplicación de bases de maquetación
 ![Imagen del proyecto](https://github.com/AsCraftC/mobile-first/blob/main/readme/Header.png?raw=true)
 
 ## Descripción 📑
