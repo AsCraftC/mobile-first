@@ -115,7 +115,7 @@ html{
     background-repeat: no-repeat;
 }
 
-.exchange-section__slider{
+.slider{
     display: flex;
     gap: 10px;
     overflow-x: scroll;
@@ -307,42 +307,13 @@ html{
     text-align: center;
 }
 
-
-.main-plans-container{
-    width: 100%;
+.plans-section{
     min-width: 320px;
     padding-bottom: 70px;
     text-align: center;
 }
-.plans---title{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-.plans---title h2{
-    padding-top: 50px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--black);
-}
-.plans---title p{
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #757575;
-}
-.plans-container--slider{
-    display: flex;
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-}
-.plans-container--card{
+
+.plan-card{
     position: relative;
     scroll-snap-align: center;
     width: 60%;
@@ -355,7 +326,7 @@ html{
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 83, 0.16);
 }
-.recommended{
+.plan-card__guidance{
     position: absolute;
     width: 120px;
     height: 31px;
@@ -367,14 +338,17 @@ html{
     font-size: 1.2rem;
     padding: 6px;
 }
-.plan-info-container h3{
+.plan-card__guidance--unique{
+    background-color: var(--warm-black);
+}
+.plan-card__plan-name{
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--black);
 }
-.plan-card--price{
+.plan-card__price{
     padding: 5px 0;
     font-size: 5.2rem;
     font-weight: bold;
@@ -382,17 +356,18 @@ html{
     font-family: "Inter", "sans-serif";
     color: var(--black);
 }
-.plan-card--price span{
+.plan-card__price-dollar{
     font-size: 1.2rem;
     font-weight: 300;
     vertical-align: 25px;
 }
-.plan-card--extra-info{
+.plan-card__extra-info{
+    height: 3.6rem;
     font-size: 1.2rem;
     font-weight: 300;
     color: #757575;
 }
-.plan-card--ca{
+.plan-card__ca{
     width: 150px;
     height: 48px;
     margin-top: 20px;
@@ -404,11 +379,11 @@ html{
     line-height: 1.8rem;
     color: var(--black);
 }
-.plan-card--ca span{
+.plan-card__ca-icon{
     display: inline-block;
     width: 20px;
     aspect-ratio: 1/1;
-    background-image: url("./assets/icons/orange-right-arrow.svg");
+    background-image: url("../assets/icons/orange-right-arrow.svg");
     vertical-align: text-bottom;
 }
 
